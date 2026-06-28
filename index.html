@@ -3,24 +3,37 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#000000">
+
 <style>
-html,body{
-  margin:0;
-  background:#000;
-  width:100%;
-  height:100%;
-  overflow:hidden;
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-video{
-  width:100%;
-  height:100%;
-  object-fit:contain;
+
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background: black;
 }
 </style>
 </head>
+
 <body>
-<video autoplay muted playsinline loop>
+
+<video autoplay muted playsinline loop controls>
   <source src="video.webm" type="video/webm">
+  <source src="video.mp4" type="video/mp4">
+  Tu navegador no soporta video HTML5.
 </video>
+
 </body>
 </html>
